@@ -1,0 +1,15 @@
+{
+  "name": "NoFacebookAds",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs", "*://www.facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.facebook.com/*"],
+      "js": ["jquery.js", "nofbads.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
