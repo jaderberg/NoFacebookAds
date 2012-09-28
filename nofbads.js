@@ -1,5 +1,5 @@
 function remove_ads() {
-    $("div .ego_column").remove();
+    $(".adsCategoryTitleLink").closest("div .ego_column").remove();
 }
 
 remove_ads();
